@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RumahBudget — Anggaran Keluarga Santoso</title>
+<meta name="description" content="RumahBudget: situs anggaran rumah tangga Keluarga Santoso — dasbor, transaksi, anggaran, tagihan, tabungan, laporan, dan kalkulator. Semua berjalan offline dari file statis.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8F%A0%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#/">
+    <span class="brand-mark" aria-hidden="true">🏠</span>
+    <span class="brand-text"><strong>RumahBudget</strong><small>Keluarga Santoso · November 2026</small></span>
+  </a>
+  <nav class="mainnav" aria-label="Navigasi utama">
+    <a href="#/" data-route="">Dasbor</a>
+    <a href="#/transactions" data-route="transactions">Transaksi</a>
+    <a href="#/budgets" data-route="budgets">Anggaran</a>
+    <a href="#/bills" data-route="bills">Tagihan</a>
+    <a href="#/goals" data-route="goals">Tabungan</a>
+    <a href="#/reports" data-route="reports">Laporan</a>
+    <a href="#/tools" data-route="tools">Kalkulator</a>
+  </nav>
+  <div class="month-chip" id="month-chip">Nov 2026 · <strong id="month-remaining">Rp 0</strong> tersisa</div>
+</header>
+
+<main id="view" class="view" aria-live="polite"></main>
+
+<footer class="footer">
+  <p><strong>RumahBudget</strong> — dibuat untuk Keluarga Santoso, keluarga fiktif berempat di Jakarta.
+  Semua angka adalah contoh realistis bulan November 2026. Data tersimpan di peramban Anda sendiri
+  (localStorage) dan tidak pernah dikirim ke mana pun — situs ini bekerja sepenuhnya offline.</p>
+  <p class="footer-links">
+    <a href="#/">Dasbor</a> · <a href="#/transactions">Transaksi</a> · <a href="#/budgets">Anggaran</a> ·
+    <a href="#/bills">Tagihan</a> · <a href="#/goals">Tabungan</a> · <a href="#/reports">Laporan</a> ·
+    <a href="#/tools">Kalkulator</a>
+  </p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
